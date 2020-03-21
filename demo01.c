@@ -1,13 +1,13 @@
-#include <stdio.h>
-#include <math.h>
+#include <stdio.h> // 引入输入输出函数
+#include <math.h> // 引入math函数
 
-int main() {
+int main() { // 主函数
 	printf("——实验上机demo01——\n——D自集成181-胡修智-234180423——\n");
 	nav();
 	return 0;
 }
 
-int nav() {
+int nav() { // 导航页函数
 	printf("本程序包含《C语言实验上机一》的四到题目：");
 	printf("\n1、三角形面积\n2、China密码\n3、摄氏温度\n4、圆。\n\n\n输入其他数字后任意键退出\n");
 	int a = 1;
@@ -31,7 +31,7 @@ int nav() {
 }
 
 
-int Triangle_area() {
+int Triangle_area() { // 三角形面积
 	double a, b, c, s, area;
 	printf("请输入三角形三边长（以空格分隔）：\n");
 	scanf_s("%lf %lf %lf", &a, &b, &c);
@@ -47,7 +47,7 @@ int Triangle_area() {
 	return 0;
 }
 
-int Password() {
+int Password() { // China密码
 	char a = 'C', b = 'h', c = 'i', d = 'n', e = 'a';
 	printf("输出原密码:%c%c%c%c%c\n", a, b, c, d, e);
 	printf("采用printf:%c%c%c%c%c\n", a+5, b+5, c+5, d+5, e+5);
@@ -67,7 +67,7 @@ int Password() {
 	return 0;
 }
 
-int Celsius() {
+int Celsius() { // 华氏温度转摄氏温度
 	int c, f = 100;
 	c = 5 * ((f - 32) / 9);
 	printf("华氏温度为%d℉\n摄氏温度为%d℃\n", f, c);
@@ -80,7 +80,7 @@ int Celsius() {
 	return 0;
 }
 
-int circle() {
+int circle() { //圆
 	double r, h, zc, mj, bmj, ytj, tj;
 	double pi = 3.14;
 	printf("请输入半径和高:\n");
