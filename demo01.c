@@ -2,6 +2,7 @@
 #include <math.h> // 引入math函数
 
 int main() { // 主函数
+	printf("Hello World!");
 	printf("——实验上机demo01——\n——D自集成181-胡修智-234180423——\n");
 	nav();
 	return 0;
